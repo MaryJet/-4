@@ -13,3 +13,4 @@ def process_string(text):
 def count_words(text):
     """Считает количество слов"""
     return len(text.split())
+# ПЗ6 тест CI
