@@ -1,7 +1,10 @@
 
 def process_numbers(numbers):
     def multi(numbers):
-        itog = 1
+        if numbers:
+            itog = 1
+        else:
+            itog = 0
         for i in range(len(numbers)):
             itog = itog * numbers[i]
         return itog
@@ -22,7 +25,7 @@ def main():
 
     total, avg, multi = process_numbers(nums_list)
     print("Сумма:", total)
-    print('Произведение', multi)
+    print('Произведение:', multi)
     print("Среднее:", avg)
 
 
